@@ -1,4 +1,4 @@
-var nome = "Fellipe Reis"
+var nome = "Fellipe Reis";
 console.log(typeof(nome));
 if(typeof(nome) == "string") {
     console.log(nome.toLocaleUpperCase());
