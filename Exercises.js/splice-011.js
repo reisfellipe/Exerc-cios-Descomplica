@@ -26,5 +26,7 @@ console.log(paises);
 var nomes = new Array("Guilherme", "Manoel", "Samuel", "Davi", "João");
 nomes.unshift("Monica");
 nomes.splice(5,1);
-console.log("A posição de Samuel é: " + nomes.indexOf(3));
+console.log("A posição de Samuel é: " + nomes.indexOf("Samuel"));
+console.log(nomes);
+nomes.splice(2,1,"Emanoel");
 console.log(nomes);
