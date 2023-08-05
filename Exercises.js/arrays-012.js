@@ -39,4 +39,16 @@ console.log(array_complete);
 
 //exercício dado em aula
 
-var meses = ["janeiro", "fevereiro", "março",];
+var ano = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+
+var trim1 = ano.slice(0,3);
+console.log(trim1);
+
+var trim2 = ano.slice(3,6);
+console.log(trim2);
+
+var trim3 = ano.slice(6,9);
+console.log(trim3);
+
+var trim4 = ano.slice(9,12);
+console.log(trim4);
