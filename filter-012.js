@@ -33,9 +33,9 @@ var funcionario = new Array(
     {nome: "Oliver", idade: 43},
 )
 
-var pessoasListagem = funcionario.filter{
+var pessoasListagem = funcionario.filter(
     function(valor) {
         return valor.nome.length < 5;
     }
-}
+)
 console.log(pessoasListagem);
