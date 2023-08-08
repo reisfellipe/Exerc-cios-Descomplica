@@ -19,6 +19,6 @@ switch("Cereja"){
         break;
     default:
         console.log(`Desculpe, estamos sem nenhuma.`);
-}
+};
 
 console.log("Tem algo mais que você gostaria de levar?");
