@@ -25,6 +25,24 @@ Por fim, o programa exibirá a mensagem ‘A soma dos números é:’, seguida p
 Em resumo, seu código deve utilizar a estrutura ‘do while’ e o método ‘reduce’ para calcular a soma dos números em um array. Essa solução permite uma abordagem eficiente e concisa para resolver esse problema específico.
 */
 
+//Array de numeros
 var numeros = new Array(1,2,3,4,5,6,7,8,9,10);
 var sum = 0;
+let index = 0;
+
+//Executando o reduce utilizando o do while
+
+do{
+    sum = numeros.reduce((somador, valores, índice)=>{
+        if(índice <= index){
+            return somador + valores;
+        }else {
+            return somador;
+        }
+    })
+    index++;
+}
+
+while(index < numeros.length);
+console.log(`A soma dos números é ${sum}`);
 
