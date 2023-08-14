@@ -8,24 +8,54 @@
 <body>
     <section class="formulario">
         <h1>Contato:</h1>
-        <form method="GET" action="">
-            <label>Nome</label><br>
-            <input type="text" name="nome"><br><br>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <form method="GET" action="">
+                <label>Nome</label><br>
+                <input type="text" name="nome"><br><br>
+                <label>E-mail</label><br>
+                <input type="email" name="E-mail"><br><br>
+                <label>Senha</label><br>
+                <input type="password" name="senha"><br><br>
+                <label>Data de ida</label><br>
+                <input type="date" name="dataIda"><br><br>
+                <label>Data de Volta</label><br>
+                <input type="date" name="dataVolta"><br><br>
+                <label>Quantidade de Pessoas</label><br>
+                <input type="number" name="Pessoas"><br><br>
+        </fieldset>
 
-            <label>E-mail</label><br>
-            <input type="email" name="E-mail"><br><br>
-
-            <label>Senha</label><br>
-            <input type="password" name="senha"><br><br>
-
-            <label>Data de ida</label><br>
-            <input type="date" name="dataIda"><br><br>
-
-            <label>Data de Volta</label><br>
-            <input type="date" name="dataVolta"><br><br>
-
-            <label>Quantidade de Pessoas</label><br>
-            <input type="number" name="Pessoas"><br><br>
+            <fieldset>
+                <legend>Quais serviços você deseja?</legend>
+                <label>
+                    <br><input type="checkbox" name="Passagens" value="Passagens">Compra de Passagens <br>
+                </label>
+                <label>
+                    <br><input type="checkbox" name="Hospedagem" value="Hospedagem">Hospedagem <br>
+                </label>
+                <label>
+                    <br><input type="checkbox" name="Reserva de Hospedagem" value="Reserva de Hospedagem">Reserva de Hospedagem <br>
+                </label>
+                <label>
+                    <br><input type="checkbox" name="Veículos" value="Veículos">Reserva de Veículos <br><br>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Forma de Pagamento</legend>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Crédito">Cartão de Crédito<br>
+                </label>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Débito">Cartão de Débito <br>
+                </label>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Boleto">Boleto parcelado em até 12x <br>
+                </label>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Pix">Pix <br>
+                </label>
+            </fieldset>
 
             <label>Comentário</label><br>
             <textarea rows="5" name="Comentário"></textarea><br>
