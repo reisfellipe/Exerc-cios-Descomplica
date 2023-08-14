@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva de Passagem</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Opções</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Bem Vindo à Nossa Agência de Viagem!</h1>
+    <p>Aqui você encontra a viagem do seus sonhos que cabe no seu bolso!</p>
+
+    <form action="GET" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                <input type="text" name="Nome">Nome <br>
+            </label><br>
+            <label>
+                <input type="email" name="Email" value="email">E-mail <br>
+            </label><br>
+            <label>
+                <input type="password" value="password">Senha <br>
+            </label><br>
+                <input type="button" value="salvar">
+        </fieldset>
+        <fieldset>
+            <legend>Serviços desejados</legend>
+            <label>
+                <input type="checkbox" name="compraPassagem">Comprar passagens <br>
+            </label>
+            <label>
+                <input type="checkbox" name="reservaHospedagem">Reserva de Hospedagens <br>
+            </label>
+            <label>
+                <input type="checkbox" name="alugarVeiculo">Alugar veículos <br>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha a Forma de Pagamento</legend>
+            <label>
+                <input type="radio" name="typeofPayment" value="creditCard">Cartão de crédito <br>
+            </label>
+            <label>
+                <input type="radio" name="typeofPayment" value="debitCard">Cartão de débito <br>
+            </label>
+            <label>
+                <input type="radio" name="typeofPayment" value="Boleto">Boleto parcelado <br>
+            </label><br>
+            <fieldset>
+                <legend>Opções de pagamento</legend>
+                <select name="aVista">
+                    <option value="aVista">À Vista com 5% de Desconto</option>
+                    <option value="2x">2x Sem Juros</option>
+                    <option value="4x">4x Sem Juros</option>
+                    <option value="6x">6x Sem Juros</option>
+                    <option value="8x">8x Sem Juros</option>
+                    <option value="10x">10x Sem Juros</option>
+                    <option value="12x">12x com 5% de Juros</option>
+                </select>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>

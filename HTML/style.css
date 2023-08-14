@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 50px;
+    padding: 10px;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header nav ul li a {
+    padding: 10px ;
+    color: white;
+    font-size: 1.1rem;
+}
+
+h1, p{
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+}
+
+fieldset {
+    margin: 15px;
+}
+
