@@ -3,9 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Primeiro projeto com Bootstrap</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Opções</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Bem Vindo à Nossa Agência de Viagem!</h1>
+    <p>Aqui você encontra a viagem do seus sonhos que cabe no seu bolso!</p>
+
+    <main>
+        <p class="artigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit aliquam laborum quasi eaque illo et non fuga, provident recusandae doloremque quibusdam iusto, optio totam aperiam reprehenderit earum expedita quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illo a autem, maxime est corporis amet recusandae minima nostrum. Voluptatem, voluptatum laboriosam tempore nisi quam quia esse quis qui et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla error ipsam! Ex pariatur nulla obcaecati quod totam. Numquam sequi expedita hic obcaecati, autem quae laboriosam quo velit placeat. Ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aliquid aspernatur incidunt itaque dolorem, ipsum quae hic consectetur quibusdam eos magni vero quam perspiciatis, accusamus sapiente ex esse exercitationem laudantium.</p>
+    </main>
+
+    <form action="GET" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                <input type="text" name="Nome">Nome <br>
+            </label><br>
+            <label>
+                <input type="email" name="Email" value="email">E-mail <br>
+            </label><br>
+            <label>
+                <input type="password" value="password">Senha <br>
+            </label><br>
+                <input type="button" value="salvar">
+        </fieldset>
+        <fieldset>
+            <legend>Serviços desejados</legend>
+            <label>
+                <input type="checkbox" name="compraPassagem">Comprar passagens <br>
+            </label>
+            <label>
+                <input type="checkbox" name="reservaHospedagem">Reserva de Hospedagens <br>
+            </label>
+            <label>
+                <input type="checkbox" name="alugarVeiculo">Alugar veículos <br>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha a Forma de Pagamento</legend>
+            <label>
+                <input type="radio" name="typeofPayment" value="creditCard">Cartão de crédito <br>
+            </label>
+            <label>
+                <input type="radio" name="typeofPayment" value="debitCard">Cartão de débito <br>
+            </label>
+            <label>
+                <input type="radio" name="typeofPayment" value="Boleto">Boleto parcelado <br>
+            </label><br>
+            <fieldset>
+                <legend>Opções de pagamento</legend>
+                <select name="aVista">
+                    <option value="aVista">À Vista com 5% de Desconto</option>
+                    <option value="2x">2x Sem Juros</option>
+                    <option value="4x">4x Sem Juros</option>
+                    <option value="6x">6x Sem Juros</option>
+                    <option value="8x">8x Sem Juros</option>
+                    <option value="10x">10x Sem Juros</option>
+                    <option value="12x">12x com 5% de Juros</option>
+                </select>
+            </fieldset>
+        </fieldset>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Esporte</td>
+                <td>Lugar</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>Vôlei</td>
+                <td>Praia</td>
+            </tr>
+            <tr>
+                <td>Sérgio</td>
+                <td>Basquete</td>
+                <td>Quadra</td>
+            </tr>
+            <tr>
+                <td>Pablo</td>
+                <td>Video Game</td>
+                <td>Casa</td>
+            </tr>
+            <tr>
+                <td>Luiza</td>
+                <td>Balé</td>
+                <td>Palco</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
