@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, p{
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+}
+
+fieldset {
+    margin: 15px;
+}
+
+.artigo {
+    text-align: justify;
+    margin: 40px;
+}
+
+#pacotes {
+    background-color: rgba(255, 84, 4, 0.719);
+    padding: 30px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+table {
+    border: 2px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border: 1px solid black;
+}
+
+table tr td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/*Selecionar itens pares*/
+table tr:nth-child(even){
+    background-color: lightslategray;
+}
+
+/*Selecionar itens ímpares*/
+table tr:nth-child(odd){
+    background-color: lightblue;
+}
+
+table thead td {
+    background-color: salmon;
+    color: white;
+    font-weight: 600;
+}
