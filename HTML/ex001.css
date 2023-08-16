@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: normal;
+    list-style: none;
+}
+
+body {
+    background-color: rgba(211, 211, 211, 0.329);
+}
+
+.title-content {
+    margin: 40px;
+}
+
+.title-content h1{
+    margin-bottom: 20px;
+}
+
+.title-content p {
+    text-align: justify;
+}
+
+#figuras {
+    margin: 0;
+    background-color: lightgray;
+    width: 100%;
+}
+
+#figuras h2 {
+    text-align: center;
+    margin: 30px auto 40px auto;
+}
+
+#figuras figcaption {
+    font-weight: 600;
+    margin: 5px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    width: 100%;
+    margin: 0;
+}
+footer p {
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding: 5px;
+}
