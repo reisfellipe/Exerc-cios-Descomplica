@@ -8,6 +8,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background: rgba(211, 211, 211, 0.384);
+}
+
 h1, p{
     text-align: center;
 }
@@ -29,6 +33,16 @@ fieldset {
     background-color: rgba(255, 84, 4, 0.719);
     padding: 30px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+#pacotes h1 {
+    color: white;
+    font-weight: 700;
+}
+
+#pacotes p {
+    text-align: justify;
+    margin: 20px;
 }
 
 table {
