@@ -6,13 +6,16 @@
     <title>Elemento DOM exemplo 1</title>
 </head>
 <body>
-    
+    <button onclick="confirma()">Excluir item</button>
 </body>
 <script>
-    //window.alert("Nosso primeiro alert")
-
-    //window.confirm("Você deseja fechar esta página?");
-
-    
+    function confirma(){
+        let confirmacao = confirm("Você deseja fechar esta página?");
+        if(confirmacao){
+            alert("Você irá excluir o item");
+        }else {
+            alert("Operação foi cancelada");
+        }
+    }
 </script>
 </html>
