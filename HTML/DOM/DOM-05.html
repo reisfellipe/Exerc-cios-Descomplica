@@ -10,7 +10,10 @@
     <ul id="lista">
         <li>primeira</li>
     </ul>
+    
+    <ul class="listaTime">
 
+    </ul>
 </body>
 <script>
     var elemento = document.createElement("div");
@@ -23,5 +26,16 @@
     li.textContent = "Segunda";
     lista.appendChild(li);  //para adicionar uma tag filha (dentro de UL)
 
+
+    times = ["ParisSanGerman", "Barcelona", "Palmeiras", "BayerDiMunic"];
+
+    var teamsList = document.querySelector('ul.listaTime')
+    for(var i = 0; i < times.length; i++){
+        var time = times[i];
+        var listItem = document.createElement('li');
+        listItem.innerText = time;
+        listItem.style.border = '1px solid orange'
+        teamsList.appendChild(listItem);
+    }
 </script>
 </html>
