@@ -21,7 +21,11 @@
     <p>Isso é <span class="estilo">elemento</span> span com class="estilo"</p>
 </body>
 <script>
-    comClasse = document.querySelector('.estilo');
-    comClasse.style.background = 'lightblue';
+    const listaEstilo = document.querySelectorAll(".estilo");
+    for(i = 0; i < listaEstilo.length; i++){
+        listaEstilo[i].style.backgroundColor = "blue"
+        listaEstilo[i].style.color = "white"
+        listaEstilo[i].innerText = listaEstilo[i].innerText.toUpperCase();
+    }
 </script>
 </html>
