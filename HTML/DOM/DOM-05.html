@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EVENTS</title>
+</head>
+<body>
+    
+    <ul id="lista">
+        <li>primeira</li>
+    </ul>
+
+</body>
+<script>
+    var elemento = document.createElement("div");
+    elemento.innerText = "Incluindo texto na div";
+    elemento.style.background = "lightpurple"
+    document.body.append(elemento); //para adicionar no body
+
+    var lista = document.getElementById("lista");
+    var li = document.createElement("li");
+    li.textContent = "Segunda";
+    lista.appendChild(li);  //para adicionar uma tag filha (dentro de UL)
+
+</script>
+</html>
