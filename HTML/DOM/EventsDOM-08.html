@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS EM DOM</title>
+</head>
+<body>
+    <form name="formLogin" onsubmit="formVerify()">
+
+        <label>E-mail</label>
+        <input type="email" id="email" />
+        
+        <label>Nome</label>
+        <input type="text" id="nome" />
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+<script>
+    // Pegando valor digitado no campo NOME
+    function formVerify(){
+        var namePerson = document.forms["formLogin"]["nome"].value;
+        if(namePerson == ""){
+            alert("Favor informar o seu nome")
+            event.preventDefault();
+        }else {
+            alert(`Seja bem vindo ${namePerson}`);
+            event.preventDefault();
+        }
+    }
+</script>
+</html>
