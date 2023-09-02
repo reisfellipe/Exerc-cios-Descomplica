@@ -8,8 +8,8 @@
     <title>Primeiro projeto com Bootstrap</title>
 </head>
 <body>
-    <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="container-fluid p-2 bg-warning text-center">
+            <nav class="navbar navbar-expand-lg bg-body-warning">
                 <div class="container-fluid">
                 <a class="navbar-brand" href="#">ReisTraveless</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
         <p class="artigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit aliquam laborum quasi eaque illo et non fuga, provident recusandae doloremque quibusdam iusto, optio totam aperiam reprehenderit earum expedita quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illo a autem, maxime est corporis amet recusandae minima nostrum. Voluptatem, voluptatum laboriosam tempore nisi quam quia esse quis qui et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla error ipsam! Ex pariatur nulla obcaecati quod totam. Numquam sequi expedita hic obcaecati, autem quae laboriosam quo velit placeat. Ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aliquid aspernatur incidunt itaque dolorem, ipsum quae hic consectetur quibusdam eos magni vero quam perspiciatis, accusamus sapiente ex esse exercitationem laudantium.</p>
     </main>
 
-    <section id="pacotes">
+    <section class="container-fluid bg-light text-center">
         <h1>Conheça nossos pacotes</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, esse quas! Velit blanditiis saepe exercitationem repellendus minima a, quia vero totam aut aspernatur ipsa nesciunt. Labore optio necessitatibus officia possimus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate explicabo aut laboriosam quae? Eveniet et quia vel dolor. Pariatur, reprehenderit ipsum! Eius consequatur recusandae magni, labore soluta molestias dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet blanditiis nisi rerum, totam, dicta nobis eveniet tenetur expedita cumque aliquid provident, soluta voluptatum. Consectetur ipsa, nemo adipisci nulla doloremque beatae!</p>
 
@@ -75,46 +75,87 @@
             </figure>
         </div>
     </section>
+    <section class="container-fluid bg-warning">
+        <h2>Taxas de Serviços</h2>
 
-    <form action="GET" method="get">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label>
-                <input type="text" name="Nome">Nome <br>
-            </label><br>
-            <label>
-                <input type="email" name="Email" value="email">E-mail <br>
-            </label><br>
-            <label>
-                <input type="password" value="password">Senha <br>
-            </label><br>
-                <input type="button" value="salvar">
-        </fieldset>
-        <fieldset>
-            <legend>Serviços desejados</legend>
-            <label>
-                <input type="checkbox" name="compraPassagem">Comprar passagens <br>
-            </label>
-            <label>
-                <input type="checkbox" name="reservaHospedagem">Reserva de Hospedagens <br>
-            </label>
-            <label>
-                <input type="checkbox" name="alugarVeiculo">Alugar veículos <br>
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Escolha a Forma de Pagamento</legend>
-            <label>
-                <input type="radio" name="typeofPayment" value="creditCard">Cartão de crédito <br>
-            </label>
-            <label>
-                <input type="radio" name="typeofPayment" value="debitCard">Cartão de débito <br>
-            </label>
-            <label>
-                <input type="radio" name="typeofPayment" value="Boleto">Boleto parcelado <br>
-            </label><br>
+        <table>
+            <caption>Descrição dos serviços e respectivos valores</caption>
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reserva de hotel</td>
+                    <td>R$500,00</td>
+                </tr>
+                <tr>
+                    <td>Compra de passagens</td>
+                    <td>R$1.000,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de carros</td>
+                    <td>R$300,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="container-fluid bg-light">
+        <h2 class="text-center"> Faça já seu orçamento</h2>
+        <form action="GET" method="get">
             <fieldset>
-                <legend>Opções de pagamento</legend>
+                <legend>Dados Pessoais</legend>
+                <div class="mb-3 ">
+                    <label class="form-label" for="Nome">
+                        Nome:
+                    </label>
+                    <input type="text" class="form-control" name="Nome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">
+                        E-mail
+                    </label>
+                    <input type="email" class="form-control" name="Email" placeholder="email@xyz.com" required id="email">
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label" for="dataIda">
+                        Data de ida:
+                    </label>
+                    <input type="date" name="dataIda" id="dataIda" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataVolta">
+                        Data de volta:
+                    </label>
+                    <input type="date" name="dataVolta" id="dataVolta" class="form-control">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Serviços desejados</legend>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="passagens" value="Passagens" id="comprarPassagem">
+                    <label class="form-check-label" for="comprarPassagem">
+                        Comprar passagens
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="reservaHospedagem" id="comprarHospedagem">
+                    <label class="form-check-label" for="comprarHospedagem">
+                        Reserva de Hospedagens
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="alugarVeiculo" id="alugarVeiculos">
+                    <label class="form-check-label" for="alugarVeiculos">
+                        Alugar veículos
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Escolha o prazo</legend>
                 <select name="aVista">
                     <option value="aVista">À Vista com 5% de Desconto</option>
                     <option value="2x">2x Sem Juros</option>
@@ -125,39 +166,12 @@
                     <option value="12x">12x com 5% de Juros</option>
                 </select>
             </fieldset>
-        </fieldset>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <td>Nome</td>
-                <td>Esporte</td>
-                <td>Lugar</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Maria</td>
-                <td>Vôlei</td>
-                <td>Praia</td>
-            </tr>
-            <tr>
-                <td>Sérgio</td>
-                <td>Basquete</td>
-                <td>Quadra</td>
-            </tr>
-            <tr>
-                <td>Pablo</td>
-                <td>Video Game</td>
-                <td>Casa</td>
-            </tr>
-            <tr>
-                <td>Luiza</td>
-                <td>Balé</td>
-                <td>Palco</td>
-            </tr>
-        </tbody>
-    </table>
+            <button class="btn btn-secondary">Salvar</button>
+        </form>
+    </section>
+    <footer class="container-fluid bg-warning">
+        <p>Desenvolvido por Fellipe Reis</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
