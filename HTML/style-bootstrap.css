@@ -44,7 +44,7 @@ fieldset {
     text-align: justify;
     margin: 20px;
 }
-
+/*
 table {
     border: 2px solid black;
     width: 100%;
@@ -61,17 +61,18 @@ table tr td {
 }
 
 /*Selecionar itens pares*/
-table tr:nth-child(even){
+/*table tr:nth-child(even){
     background-color: lightslategray;
 }
 
 /*Selecionar itens ímpares*/
-table tr:nth-child(odd){
+/*table tr:nth-child(odd){
     background-color: lightblue;
 }
-
+/*
 table thead td {
     background-color: salmon;
     color: white;
     font-weight: 600;
 }
+*/
