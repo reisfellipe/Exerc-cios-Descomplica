@@ -146,3 +146,37 @@
         margin-top: -6em;
     }
 }
+
+/*DESTAQUES*/
+#featured-container {
+    margin-bottom: 4em;
+}
+
+.title {
+    font-size: 1.75em;
+    margin-bottom: .4em;
+    position: relative;
+}
+
+.title:before {
+    width: 75px;
+    border-top: 4px solid #7a7a7a;
+    content: '';
+    position: absolute;
+    bottom: 2em;
+}
+
+#featured-images {
+    margin-top: 2em;
+}
+
+#featured-images .col-md-4 {
+    position: relative;
+    cursor: pointer;
+}
+
+#featured-images .banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
