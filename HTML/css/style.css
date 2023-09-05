@@ -7,20 +7,21 @@
 }
 
 .bg-secondary-color {
-    background-color: #ffffff;
+    background-color: #ece8e2;
 }
 
 .bg-dark-color {
     background-color: #050505;
 }
 
-.primary-color{
-    background-color: #ffffff;
+.primary-color {
+    color: #050505;
 }
 
-.secondary-color{
-    background-color: #ffffff;
+.secondary-color {
+    color: #7a7a7a;
 }
+
 
 /*NAVBAR*/
 
@@ -295,4 +296,31 @@
 
 #links-container a:hover {
     color: #fff;
+}
+
+/*FOOTER BOTTOM*/
+#footer-bottom {
+    border-top: 1px solid #7a7a7a;
+    padding-top: 2em;
+}
+
+#footer-bottom i {
+    color: #e61e10;
+    margin-left: 0.3em;
+}
+
+@media(min-width:768px){
+    #news-container {
+        padding-right: 2em;
+    }
+
+    #links-container  {
+        padding-right: 2em;
+    }
+
+    #contact-container {
+        padding: 0 2em;
+        border-left: 1px solid #7a7a7a;
+        border-right: 1px solid #7a7a7a;
+    }
 }
