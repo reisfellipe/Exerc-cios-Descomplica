@@ -44,6 +44,12 @@ fieldset {
     text-align: justify;
     margin: 20px;
 }
+
+.carousel-caption h5{
+    font-size: 3em;
+    color: #ffc107;
+    text-shadow: 2px 2px 2px black;
+}
 /*
 table {
     border: 2px solid black;
